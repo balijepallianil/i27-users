@@ -1,0 +1,9 @@
+labelname: i27-user
+deployname: i27-user-dev
+namespace: i27-dev-ns
+replicas:
+  default: 1
+image:
+  name: i27anilb3/user
+  tag: ${GIT_COMMIT}
+targetPort: 8232
